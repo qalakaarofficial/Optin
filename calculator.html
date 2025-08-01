@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Options Calculator - OptionsBuy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="buy-calls.html">Buy Calls</a>
+    <a href="buy-puts.html">Buy Puts</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="strategies.html">Strategies</a>
+    <a href="glossary.html">Glossary</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<div class="container">
+  <h1>Option Buying Calculator</h1>
+  <div class="card">
+    <label>Option Type:
+      <select id="optionType">
+        <option value="call">Call</option>
+        <option value="put">Put</option>
+      </select>
+    </label><br><br>
+    <label>Strike Price: <input type="number" id="strikePrice" value="100" /></label><br><br>
+    <label>Premium Paid: <input type="number" id="premium" value="5" /></label><br><br>
+    <label>Stock Price at Expiry: <input type="number" id="expiryPrice" value="110" /></label><br><br>
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 OptionsBuy. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js/calculator.js"></script>
+</body>
+</html>
